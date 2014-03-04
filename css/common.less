@@ -1,0 +1,55 @@
+@import "variables.less";
+
+div.navbar div.container {
+	margin: 0px;
+}
+
+body {
+	background: transparent;
+}
+
+.Center {
+	text-align: center;
+}
+
+.Left {
+	text-align: left;
+}
+
+/* navbar styles */
+div.navbar {
+	border-radius: 5px;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff;
+	background-color: transparent;
+}
+
+/*****************************************************************************/
+/*
+/* Media Queries
+/*
+/*****************************************************************************/
+
+@media (max-width: @screen-phone-max) {
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+		padding-top: 0px;
+	}
+	
+	div.navbar-fixed-top {
+		margin-bottom: 0px;
+	}
+	
+	div.navbar-wrapper {
+		padding-top: 10px;
+	}
+}
+
+@media (min-width: @screen-sm-min) {
+	.navbar-wrapper {
+		margin-top: 20px;
+	}
+}
