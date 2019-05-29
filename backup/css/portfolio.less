@@ -1,0 +1,42 @@
+@import "back_pages.less";
+
+.pic-block div.row {
+	margin-top: 3px;
+}
+
+
+/* Phones */
+@media (max-width: @screen-phone-max) {
+	div#content {
+		max-width: 720px;
+	}
+}
+
+/* Tablet-portrait */
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+	div#content {
+		max-width: 750px;
+	}
+}
+
+/* Tablet-landscape */
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+	div#content {
+		max-width: 970px;
+	}
+}
+
+/* Desktop */
+@media (min-width: @screen-lg-min) {
+	div#content {
+		max-width: 1170px;
+	}
+}
+
+/* Tablet-landscape and smaller */
+@media (max-width: @screen-md-max) {
+	.pic-block div.row div[class*='col-'] {
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+}
